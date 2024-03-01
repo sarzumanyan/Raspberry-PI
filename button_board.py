@@ -7,10 +7,11 @@ button = 3
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(led, GPIO.OUT)
 GPIO.setup(button, GPIO.IN,pull_up_down=GPIO.PUD_UP)
-
-while True:
-    if GPIO.input(button) == GPIO.LOW:
-        GPIO.output(led,not GPIO.input(led))
-        time.sleep(0.2)
-GPIO.cleanup()
-print("Done")
+try:
+    while True:
+        if GPIO.input(button) == GPIO.LOW:
+            GPIO.output(led,not GPIO.input(led))
+            time.sleep(0.5)
+except KeyboardInterrupt:
+    GPIO.cleanup()
+    print("Done")
