@@ -33,5 +33,7 @@ Uncomment the line
 Save the file and type command `sudo sysctl -p`
 ### 6. Restart services
 `sudo service hostapd restart
+`
+`
 sudo service dnsmasq restart
 `
