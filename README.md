@@ -1,4 +1,5 @@
 # Wi-Fi bridge
+Follow this [link](https://pimylifeup.com/raspberry-pi-wifi-bridge/)
 ### 1. Update your Raspberry Pi:
 `sudo apt upgrade`
 ### 2. Install hostapd and dnsmasq:
