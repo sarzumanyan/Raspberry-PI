@@ -9,9 +9,8 @@ To install and run the operating system (OS) and necessary software. An 8GB or l
 ### 3. Power Supply
 Make sure you have a suitable power adapter for your Raspberry Pi.
 ### 4. Ethernet Cable
-This will be used to connect the Raspberry Pi to your primary router or modem.
+This will be used to connect the Raspberry Pi to your primary router or modem.   
 
----
 After configuring RPI as wi-fi bridge and connecting it to ethernet and power supply, restart dnsmasq and hostapd services with commands  `sudo systemctl restart hostapd` and  `sudo systemctl restart dnsmasq`, check the status with `sudo systemctl status hostapd` and `sudo systemctl status dnsmasq` in case they're not configured to autorun.   
 
 If you want to restrict specific mac address from your wi-fi bridge, follow this steps.
